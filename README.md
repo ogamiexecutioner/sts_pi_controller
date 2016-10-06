@@ -25,7 +25,7 @@ And then you should reboot.
 Just clone this repo or download the zipped version:
 
 ```
-git clone https://github.com/sandyjmacdonald/sts_pi_controller.git
+git clone https://github.com/maryannh/sts_pi_controller.git
 ```
 
 Then, move into the `sts_pi_controller` directory and run the app:
