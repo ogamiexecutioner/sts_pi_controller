@@ -1,1 +1,4 @@
-
+a.control img {
+  max-width: 100px;
+  max-height: auto;
+}
