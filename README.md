@@ -1,4 +1,4 @@
-# STS-Pi controller
+# STS-Pi controller with added camera on/off buttons
 
 A super simple web app controller for the Pimoroni STS-Pi robot, using Flask and Skeleton.
 
