@@ -25,7 +25,7 @@ And then you should reboot.
 Just clone this repo or download the zipped version:
 
 ```
-git clone https://github.com/maryannh/sts_pi_controller.git
+git clone https://github.com/ogamiexecutioner/sts_pi_controller.git
 ```
 
 Then, move into the `sts_pi_controller` directory and run the app:
@@ -37,3 +37,5 @@ sudo python app.py
 
 The app will now be running on port 80 at the IP address of your Pi. Just
 enter that address in your browser and away you go!
+
+added camera on/off buttons
