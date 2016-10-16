@@ -1,7 +1,14 @@
 import explorerhat as eh
 from flask import Flask, render_template
+from picamera import PiCamera
+from time import time
+from datetime import datetime
 
 app = Flask(__name__)
+camera = PiCamera()
+
+filename = datetime.now().strftime("%Y-%m-%d_%H.%M.%S.h264")
+camera.rotation = 180
 
 @app.route("/")
 @app.route("/<state>")
@@ -27,6 +34,10 @@ def update_robot(state=None):
     if state == 'clockwise':
         eh.motor.one.forwards(100)
         eh.motor.two.forwards(100)
+    if state == 'cam-on':
+        camera.start_recording(datetime.now().strftime("%Y-%m-%d_%H.%M.%S.h264"))
+    if state == 'cam-off':
+        camera.stop_recording()
     template_data = {
         'title' : state,
     }
