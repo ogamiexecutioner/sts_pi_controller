@@ -7,7 +7,6 @@ from datetime import datetime
 app = Flask(__name__)
 camera = PiCamera()
 
-filename = datetime.now().strftime("%Y-%m-%d_%H.%M.%S.h264")
 camera.rotation = 180
 
 @app.route("/")
